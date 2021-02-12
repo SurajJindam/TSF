@@ -1,0 +1,202 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1.9;
+    background-color: #f3f3f3;
+  }
+
+  .header{
+    display:flex;
+    height:9rem;
+    /* border:5px solid black; */
+    padding:2rem;
+}
+
+.menu-options{
+    padding-top:1rem;
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    margin-left:10%;
+}
+
+h1{
+    font-size: 3rem;
+    color:#025584;
+    padding-left: 1rem;
+    padding-right: 10rem;
+}
+
+.error{
+  width:30%;
+  background-color:#FFD6D4;
+  margin :auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.success{
+  width:30%;
+  background-color:#95D797;
+  margin :auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icon-image{
+    height:5rem;
+}
+
+.middle{
+    display:flex;
+    height:30rem;
+    /* border:5px solid black; */
+}
+
+.intro{
+    padding:15rem;
+    font-size: 3rem;
+}
+
+.green{
+    background-color:#95D797;
+}
+
+.bank-image{
+    margin:5rem 0 0 10rem;
+    height:40rem;
+}
+
+.transactions{
+    margin:6rem 0 5rem 10rem;
+}
+button{
+    background-color:white; /* Green */
+    border: 1px solid #4bee74;
+    color:black;
+    padding: 3rem 5rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin-right: 5rem;
+    /* transition-duration: 0.4s; */
+}
+
+button:hover{
+    background-color: #4CAF50;
+    color:white;
+    cursor: pointer;
+}
+
+.footer{
+    margin:8rem 0 10rem 0;
+    text-align: center;
+}
+
+.open-account{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+button.open-account-btn{
+    color:white;
+    background-color:#4CAF50;
+    font-size: 3rem;
+}
+
+.credits{
+  margin:auto auto 5rem auto;
+  width:50%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* MODAL WINDOW */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    background-color: #f3f3f3;
+    padding: 5rem 6rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    /* transition: all 0.5s; */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    transition: all 0.5s;
+  }
+  
+  .modal__header {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.5;
+  }
+  
+  .modal__form {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .modal__form label {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  
+  .modal__form input {
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  
+  .modal__form button {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+  
+  button.btn--close-modal {
+    padding:0;
+    font-family: inherit;
+    color: inherit;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
